@@ -1,0 +1,234 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #25353f;
+}
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  background: #dae7fd36;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* border: dotted 2px; */
+  height: 100vh;
+  width: 100vw;
+}
+
+.smoothChange {
+  transition-timing-function: ease;
+  transition: width 0.3s;
+}
+
+.sideBar {
+  height: 100%;
+}
+
+.devicesBarContainer {
+  margin: 0;
+  background: #dae7fd36;
+  height: 100%;
+  width: 100%;
+}
+
+.devicesSearch {
+  height: 60px;
+  border-radius: 0px 30px 30px 0px;
+  border-bottom: solid #808080;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.devicesList {
+  overflow: auto;
+  height: calc(100% - 60px);
+  margin: 0;
+  width: 100%;
+  border: None;
+}
+
+.device {
+  cursor: pointer;
+  border-bottom: solid 2px #808080;
+  padding: 15px 20px;
+  margin: 0;
+  width: 100%;
+  font-size: 1.1em;
+}
+.deviceOut {
+  background: #ffffff;
+}
+.deviceOver {
+  background: #dddddd;
+}
+.deviceSelected {
+  background: #bbbbbb;
+}
+
+.btn {
+  border-radius: 0;
+  width: 40px;
+  height: 100%;
+}
+
+.chatBarContainer {
+  height: 100%;
+}
+
+.firstChatBarContainer {
+  background-color: rgb(109, 109, 109);
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90vh;
+}
+
+.chatInfoBar {
+  position: relative;
+  background: #2979ff;
+  color: #fff;
+  font-size: 1.2rem;
+
+  align-items: center;
+  border-radius: 0;
+  border: none;
+  padding: 15px;
+  height: 60px;
+  /* margin-bottom: 10px; */
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.sideBarBtnIcon {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.sideBarBtnIcon:hover {
+  color: blanchedalmond;
+}
+
+.chatPage {
+  /* background: #eeeeee; */
+  overflow: auto;
+  /* scroll-behavior: ; */
+  height: calc(100% - 130px);
+  width: 100%;
+  position: relative;
+}
+
+.chatInputForm {
+  display: flex;
+  border: 2px solid #cccccc;
+  height: 70px;
+}
+
+.msgsSearch {
+  /* opacity: 50%; */
+  transition: opacity 0.2s ease;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  margin: 5px;
+  height: 80%;
+  border-radius: 20px;
+  border-bottom: solid #808080;
+  padding: 8px 10px;
+  width: 50%;
+}
+.disappear {
+  opacity: 0;
+  cursor: default;
+  /* visibility: hidden; */
+  /* backface-visibility: hidden; */
+}
+
+.chatInputMsg {
+  border-radius: 0;
+  padding: 15px;
+  width: 80%;
+  height: 100%;
+  font-size: 1.2em;
+  display: flex;
+}
+
+.sendButton {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  background: #2979ff;
+  border: none;
+  width: 20%;
+  transition: box-shadow ease 0.2s;
+}
+.sendButton:hover {
+  box-shadow: inset 0 0 10px #fafafa;
+}
+
+.msgContainer {
+  display: flex;
+  /* justify-content: flex-end; */
+  padding: 0 10px;
+  margin-top: 3px;
+  align-items: center;
+}
+
+.msgBox {
+  /* background: #00f683; */
+  /* border: solid #000000; */
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: black;
+  display: inline-block;
+  max-width: 80%;
+  box-shadow: 5px rgb(0, 0, 0, 0.5);
+}
+
+.deviceMsg {
+  background: #4afaa8;
+}
+
+.userMsg {
+  background: #75d1fb;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.msgContent {
+  width: 100%;
+  letter-spacing: 0;
+  float: left;
+  font-size: 1em;
+  word-wrap: break-word;
+}
+
+.msgTime {
+  display: inline-block;
+  margin: 10px;
+  color: #828282; /* justify-content: flex-start; */
+}
+
+.searchIcon {
+  right: 0;
+  margin: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.searchIcon:hover {
+  color: blanchedalmond;
+}

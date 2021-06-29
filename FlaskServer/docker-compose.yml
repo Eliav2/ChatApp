@@ -1,0 +1,15 @@
+version: "3"
+services:
+  redis_server:
+    image: redis
+  flask:
+    build: .
+    image: flaskapp
+    ports:
+      - "5000:5000"
+    environment: 
+      - REDIS_NAME=redis_server
+    links:
+      - redis_server
+    depends_on:
+      - redis_server

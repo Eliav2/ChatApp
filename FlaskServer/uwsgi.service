@@ -1,0 +1,7 @@
+[Unit]
+Description=uWSGI instance to serve myproject
+After=network.target
+
+[Service]
+User=eliav
+Group=www-data

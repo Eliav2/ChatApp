@@ -1,0 +1,42 @@
+.commit {
+  align-self: center;
+  text-align: center;
+  word-wrap: break-word;
+  white-space: pre-line;
+  width: 500px;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  border: "2px black";
+  background-color: lightblue;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  background: #282a36;
+}
+
+#centered-div {
+  align-self: center;
+}
+
+.commitsContainer {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.commitBox {
+  cursor: pointer;
+  border-bottom: solid 2px #808080;
+  border-left: solid 2px #808080;
+  border-right: solid 2px #808080;
+  padding: 15px 20px;
+  margin: 0;
+  width: 100%;
+  font-size: 1.1em;
+}
